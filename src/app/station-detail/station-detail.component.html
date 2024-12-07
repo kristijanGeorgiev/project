@@ -1,0 +1,10 @@
+<div *ngIf="station">
+    <h2>Station Details</h2>
+    <p><strong>ID:</strong> {{ station.id }}</p>
+    <p><strong>Location:</strong> {{ station.location }}</p>
+    <p><strong>Capacity:</strong> {{ station.capacity }}</p>
+    <p><strong>Address:</strong> {{ station.address }}</p>
+    <button (click)="goToStationList()" style="margin-top: 20px; background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+        Back to Station List
+    </button>
+</div>

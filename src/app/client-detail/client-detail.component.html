@@ -1,0 +1,11 @@
+<div *ngIf="client">
+    <h2>Client Details</h2>
+    <p><strong>ID:</strong> {{ client.id }}</p>
+    <p><strong>Name:</strong> {{ client.name }}</p>
+    <p><strong>Address:</strong> {{ client.address }}</p>
+    <p><strong>Email:</strong> {{ client.email }}</p>
+    <p><strong>Phone:</strong> {{ client.phone }}</p>
+    <button (click)="goToClientList()" style="margin-top: 20px; background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+        Back to Client List
+      </button>
+</div>

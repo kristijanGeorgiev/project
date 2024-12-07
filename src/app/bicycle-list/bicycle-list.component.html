@@ -1,0 +1,49 @@
+<div>
+    <h1>Bicycle List</h1>
+  
+    <div class="header-row">
+      <div class="filter-container">
+        <label for="serialnumberFilter">SerialNumber:</label>
+        <input [(ngModel)]="serialnumberFilter" (input)="applyFilters()" name="serialnumberFilter" class="input-field" />
+  
+        <label for="stationFilter">Station:</label>
+        <select id="stationFilter" [(ngModel)]="stationfilter" (change)="applyFilters()" *ngIf="stationloaded" class="select-field">
+          <option value="">All Stations</option>
+          <option *ngFor="let station of stations" [value]="station.location">
+            {{ station.location }}
+          </option>
+        </select>
+      </div>
+  
+      <button style="background-color: rgb(0, 192, 250); color: white;" class="add-bicycle-button">
+        <a routerLink="/bicycle-add" class="add-bicycle-link">Add New Bicycle</a>
+      </button>
+    </div>
+  
+    <table>
+      <thead>
+        <tr>
+          <th (click)="sortByID()">ID ▲▼</th>
+          <th (click)="sortBySerialNumber()">SerialNumber ▲▼</th>
+          <th>Model</th>
+          <th>Available</th>
+          <th>Station</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let bicycle of bicycles">
+          <td>{{ bicycle.id }}</td>
+          <td>{{ bicycle.serialnumber }}</td>
+          <td>{{ bicycle.model }}</td>
+          <td>{{ bicycle.status }}</td>
+          <td>{{ bicycle.station.location }}</td>
+          <td>
+            <button style="background-color: blue; color: white;" (click)="viewBicycleDetails(bicycle)">View</button>
+            <button style="background-color: rgb(21, 177, 15); color: white;" (click)="editBicycle(bicycle)">Edit</button>
+            <button style="background-color: red; color: white;" (click)="deleteBicycle(bicycle)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>  

@@ -1,0 +1,15 @@
+<div *ngIf="maintenance">
+    <h2>Maintenance Details</h2>
+    <p><strong>ID:</strong> {{ maintenance.id }}</p>
+    <p><strong>Description:</strong> {{ maintenance.description}}</p>
+    <p><strong>Priority:</strong> {{ maintenance.priority }}</p>
+    <p><strong>Available:</strong> {{ maintenance.status }}</p>
+    <p><strong>DateScheduled:</strong> {{ maintenance.datescheduled }}</p>
+    <p><strong>CompletedDate:</strong> {{ maintenance.completedDate }}</p>
+    <p><strong>Notes:</strong> {{ maintenance.notes }}</p>
+    <p><strong>AssignedTo:</strong> {{ maintenance.assignedTo}}</p>
+    <p><strong>Bicycle:</strong> {{ maintenance.bicycle.serialnumber }}</p>
+    <button (click)="goToMaintenanceList()" style="margin-top: 20px; background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+        Back to Maintenance List
+      </button>
+</div>

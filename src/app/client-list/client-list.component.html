@@ -1,0 +1,41 @@
+<div>
+    <h1>Client List</h1>
+  
+    <div class="header-row">
+      <div class="filter-container">
+        <label for="nameFilter">Name:</label>
+        <input [(ngModel)]="nameFilter" (input)="applyFilters()" name="nameFilter" class="input-field" />
+      </div>
+      
+      <button style="background-color: rgb(0, 192, 250); color: white;" class="add-client-button">
+        <a routerLink="/client-add" class="add-client-link">Add New Client</a>
+      </button>
+    </div>
+  
+    <table>
+      <thead>
+        <tr>
+          <th (click)="sortByID()">ID ▲▼</th>
+          <th (click)="sortByName()">Name ▲▼</th>
+          <th>Address</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let client of clients">
+          <td>{{ client.id }}</td>
+          <td>{{ client.name }}</td>
+          <td>{{ client.address }}</td>
+          <td>{{ client.email }}</td>
+          <td>{{ client.phone }}</td>
+          <td>
+            <button style="background-color: blue; color: white;" (click)="viewClientDetails(client)">View</button>
+            <button style="background-color: rgb(21, 177, 15); color: white;" (click)="editClient(client)">Edit</button>
+            <button style="background-color: red; color: white;" (click)="deleteClient(client)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>  

@@ -1,0 +1,779 @@
+{
+  "station": [
+    {
+      "id": 1,
+      "location": "Karpos 3",
+      "capacity": 21,
+      "address": "Volgogradska 52"
+    },
+    {
+      "id": 2,
+      "location": "Karpos 2",
+      "capacity": 12,
+      "address": "Dame Gruev 12"
+    },
+    {
+      "id": 52,
+      "location": "Debar Maalo",
+      "capacity": 14,
+      "address": "Partizanska"
+    },
+    {
+      "id": 54,
+      "location": "Centar 1",
+      "capacity": "15",
+      "address": "Bul. Goce Delcev"
+    },
+    {
+      "id": 55,
+      "location": "Cento",
+      "capacity": 23,
+      "address": "Nikola Karev 10A"
+    },
+    {
+      "id": 56,
+      "location": "Kisela Voda",
+      "capacity": 21,
+      "address": "Bukureshka"
+    },
+    {
+      "id": 57,
+      "location": "Zelenikovo",
+      "capacity": 25,
+      "address": "Nikola Tesla 12"
+    },
+    {
+      "id": 58,
+      "location": "Centar 2",
+      "capacity": 22,
+      "address": "Goce Delcev 10a"
+    },
+    {
+      "id": 59,
+      "location": "Centar 3",
+      "capacity": 30,
+      "address": "Nikola Tesla 12"
+    },
+    {
+      "location": "Centar",
+      "capacity": 11,
+      "address": "Bijlanini Izvori 42",
+      "id": 60
+    }
+  ],
+  "bicycle": [
+    {
+      "id": 1,
+      "serialnumber": "TGY0001928",
+      "model": "Black Steel 41",
+      "status": "Y",
+      "station": {
+        "id": 57,
+        "location": "Karpos",
+        "capacity": 10,
+        "address": "Bukureshka"
+      }
+    },
+    {
+      "id": 3,
+      "serialnumber": "CTFY0001823",
+      "model": "Black Steel 8",
+      "status": "Y",
+      "station": {
+        "id": 54,
+        "location": "Centar",
+        "capacity": 1,
+        "address": "Bukureshka"
+      }
+    },
+    {
+      "id": 4,
+      "serialnumber": "SAMD0001524",
+      "model": "Black Steel 18",
+      "status": "Y",
+      "station": {
+        "id": 2,
+        "location": "Karpos 2",
+        "capacity": 12,
+        "address": "Dame"
+      }
+    },
+    {
+      "id": 5,
+      "serialnumber": "TGY926384hY",
+      "model": "PD",
+      "status": "N",
+      "station": {
+        "id": 52,
+        "location": "Debar Maalo",
+        "capacity": 14,
+        "address": "Partizanska"
+      }
+    },
+    {
+      "id": 6,
+      "serialnumber": "TGY926384h12",
+      "model": "PD",
+      "status": "Y",
+      "station": {
+        "id": 54,
+        "location": "Centar",
+        "capacity": 1,
+        "address": "Bukureshka"
+      }
+    },
+    {
+      "serialnumber": "TGC926384h12",
+      "model": "PU",
+      "status": "Y",
+      "station": {
+        "id": 1,
+        "location": "Karpos 3",
+        "capacity": 21,
+        "address": "Volgogradska 52"
+      },
+      "id": 7
+    },
+    {
+      "serialnumber": "TGC978384c12",
+      "model": "PF",
+      "status": "Y",
+      "station": {
+        "id": 55,
+        "location": "Cento",
+        "capacity": 23,
+        "address": "Bukureshka"
+      },
+      "id": 8
+    },
+    {
+      "serialnumber": "TGC938104n18",
+      "model": "SM",
+      "status": "Y",
+      "station": {
+        "id": 57,
+        "location": "Zelenikovo",
+        "capacity": 25,
+        "address": "Nikola Tesla 12"
+      },
+      "id": 9
+    },
+    {
+      "serialnumber": "B17V78354",
+      "model": "Black Tore 49",
+      "status": "Y",
+      "station": {
+        "id": 1,
+        "location": "Karpos 3",
+        "capacity": 21,
+        "address": "Volgogradska 52"
+      },
+      "id": 10
+    },
+    {
+      "serialnumber": "C23V90302H",
+      "model": "HP",
+      "status": "Y",
+      "station": {
+        "id": 54,
+        "location": "Centar",
+        "capacity": "15",
+        "address": "Bul. Goce Delcev"
+      },
+      "id": 11
+    }
+  ],
+  "client": [
+    {
+      "id": 2,
+      "name": "Vale",
+      "address": "Bijlanini Izvori",
+      "email": "vale@yahoo.com",
+      "phone": "073241927"
+    },
+    {
+      "id": 3,
+      "name": "Petar Petrovski",
+      "address": "Prashka 2",
+      "email": "petar@gmail.com",
+      "phone": "073241628"
+    },
+    {
+      "name": "Dafinka Spasova",
+      "address": "Bukureshka 5/1",
+      "email": "dafe@gmail.com",
+      "phone": "078243923",
+      "id": 4
+    },
+    {
+      "name": "Zoran Trpovski",
+      "address": "Bul. Goce Delcev 4",
+      "email": "zoran@gmail.com",
+      "phone": "045362718",
+      "id": 5
+    },
+    {
+      "name": "Veneta Arsovska",
+      "address": "Bijlanini Izvori 23",
+      "email": "veneta@gmail.com",
+      "phone": "045738251",
+      "id": 6
+    },
+    {
+      "name": "Dejan Arsovski",
+      "address": "Bukureshka 3",
+      "email": "dejan@gmail.com",
+      "phone": "048253716",
+      "id": 7
+    },
+    {
+      "name": "Svetlana Atanasovska",
+      "address": "Nikola Tesla 13",
+      "email": "svetlana@gmail.com",
+      "phone": "078243516",
+      "id": 8
+    },
+    {
+      "name": "Maria Georgieva",
+      "address": "Bukureshka 5/1",
+      "email": "maria@gmail.com",
+      "phone": "076285630",
+      "id": 9
+    },
+    {
+      "name": "Eli Handziska",
+      "address": "Bijlanini Izvori 4",
+      "email": "eli@gmail.com",
+      "phone": "047283715",
+      "id": 10
+    },
+    {
+      "name": "Ivica Naumovski",
+      "address": "Bul. Goce Delcev 4",
+      "email": "ivica@gmail.com",
+      "phone": "075263819",
+      "id": 11
+    }
+  ],
+  "maintenance": [
+    {
+      "id": 1,
+      "bicycle": {
+        "id": 1,
+        "serialnumber": "TGY926384h12",
+        "model": "PD",
+        "status": "Y",
+        "station": {
+          "id": 54,
+          "location": "Centar",
+          "capacity": 1,
+          "address": "Bukureshka"
+        }
+      },
+      "description": "Repairing tores",
+      "priority": "2",
+      "status": "Y",
+      "datescheduled": "2024-12-04",
+      "completedDate": "2024-12-04",
+      "notes": "none",
+      "assignedTo": "Vale"
+    },
+    {
+      "id": 5,
+      "bicycle": {
+        "serialnumber": "TGC938104n18",
+        "model": "SM",
+        "status": "Y",
+        "station": {
+          "id": 57,
+          "location": "Zelenikovo",
+          "capacity": 25,
+          "address": "Nikola Tesla 12"
+        },
+        "id": 9
+      },
+      "description": "Repairing licenses",
+      "priority": "1",
+      "status": "Y",
+      "datescheduled": "2024-12-01",
+      "completedDate": "2024-12-01",
+      "notes": "none",
+      "assignedTo": "Tanja"
+    },
+    {
+      "description": "Popravka na svetlo",
+      "priority": "32",
+      "status": "Y",
+      "datescheduled": "2024-04-23",
+      "completedDate": "2025-01-29",
+      "notes": "None",
+      "assignedTo": "Dafinka",
+      "bicycle": {
+        "id": 4,
+        "serialnumber": "SAMD0001524",
+        "model": "Black Steel 18",
+        "status": "Y",
+        "station": {
+          "id": 2,
+          "location": "Karpos 2",
+          "capacity": 12,
+          "address": "Dame"
+        }
+      },
+      "id": 6
+    },
+    {
+      "description": "Popravka na pedajli",
+      "priority": "39",
+      "status": "Y",
+      "datescheduled": "2024-04-23",
+      "completedDate": "2025-01-29",
+      "notes": "None",
+      "assignedTo": "Veneta",
+      "bicycle": {
+        "serialnumber": "B17V78354",
+        "model": "Black Tore 49",
+        "status": "Y",
+        "station": {
+          "id": 1,
+          "location": "Karpos 3",
+          "capacity": 21,
+          "address": "Volgogradska 52"
+        },
+        "id": 10
+      },
+      "id": 7
+    },
+    {
+      "description": "Popravka na guma",
+      "priority": "19",
+      "status": "Y",
+      "datescheduled": "2024-01-23",
+      "completedDate": "2024-01-29",
+      "notes": "None",
+      "assignedTo": "Dejan",
+      "bicycle": {
+        "serialnumber": "TGC938104n18",
+        "model": "SM",
+        "status": "Y",
+        "station": {
+          "id": 57,
+          "location": "Zelenikovo",
+          "capacity": 25,
+          "address": "Nikola Tesla 12"
+        },
+        "id": 9
+      },
+      "id": 8
+    },
+    {
+      "description": "Popravka na volan",
+      "priority": "40",
+      "status": "Y",
+      "datescheduled": "2025-09-14",
+      "completedDate": "2025-01-19",
+      "notes": "None",
+      "assignedTo": "Srna",
+      "bicycle": {
+        "serialnumber": "B17V78354",
+        "model": "Black Tore 49",
+        "status": "Y",
+        "station": {
+          "id": 1,
+          "location": "Karpos 3",
+          "capacity": 21,
+          "address": "Volgogradska 52"
+        },
+        "id": 10
+      },
+      "id": 9
+    },
+    {
+      "description": "Popravka na sijalica",
+      "priority": "5",
+      "status": "Y",
+      "datescheduled": "2024-10-13",
+      "completedDate": "2024-10-19",
+      "notes": "None",
+      "assignedTo": "Zoran",
+      "bicycle": {
+        "serialnumber": "TGC978384c12",
+        "model": "PF",
+        "status": "Y",
+        "station": {
+          "id": 55,
+          "location": "Cento",
+          "capacity": 23,
+          "address": "Bukureshka"
+        },
+        "id": 8
+      },
+      "id": 10
+    },
+    {
+      "description": "Popravka na svetlo",
+      "priority": "70",
+      "status": "Y",
+      "datescheduled": "2024-11-13",
+      "completedDate": "2024-11-19",
+      "notes": "None",
+      "assignedTo": "Kalin",
+      "bicycle": {
+        "serialnumber": "TGC978384c12",
+        "model": "PF",
+        "status": "Y",
+        "station": {
+          "id": 55,
+          "location": "Cento",
+          "capacity": 23,
+          "address": "Bukureshka"
+        },
+        "id": 8
+      },
+      "id": 11
+    },
+    {
+      "description": "Popravka na zadna guma",
+      "priority": "63",
+      "status": "Y",
+      "datescheduled": "2024-04-23",
+      "completedDate": "2024-04-27",
+      "notes": "None",
+      "assignedTo": "David",
+      "bicycle": {
+        "serialnumber": "TGC938104n18",
+        "model": "SM",
+        "status": "Y",
+        "station": {
+          "id": 57,
+          "location": "Zelenikovo",
+          "capacity": 25,
+          "address": "Nikola Tesla 12"
+        },
+        "id": 9
+      },
+      "id": 12
+    },
+    {
+      "description": "Popravka na predna guma",
+      "priority": "39",
+      "status": "Y",
+      "datescheduled": "2024-04-23",
+      "completedDate": "2024-04-29",
+      "notes": "None",
+      "assignedTo": "Kristijan",
+      "bicycle": {
+        "serialnumber": "TGC926384h12",
+        "model": "PU",
+        "status": "Y",
+        "station": {
+          "id": 1,
+          "location": "Karpos 3",
+          "capacity": 21,
+          "address": "Volgogradska 52"
+        },
+        "id": 7
+      },
+      "id": 13
+    },
+    {
+      "description": "Repairing doors",
+      "priority": "3",
+      "status": "Y",
+      "datescheduled": "2024-12-11",
+      "completedDate": "2024-12-11",
+      "notes": "Beleska",
+      "assignedTo": "Eli",
+      "bicycle": {
+        "serialnumber": "B17V78354",
+        "model": "Black Tore 49",
+        "status": "Y",
+        "station": {
+          "id": 1,
+          "location": "Karpos 3",
+          "capacity": 21,
+          "address": "Volgogradska 52"
+        },
+        "id": 10
+      },
+      "id": 14
+    }
+  ],
+  "ride": [
+    {
+      "id": 3,
+      "client": {
+        "name": "Veneta Arsovska",
+        "address": "Bijlanini Izvori 23",
+        "email": "veneta@gmail.com",
+        "phone": "045738251",
+        "id": 6
+      },
+      "bicycle": {
+        "id": 6,
+        "serialnumber": "TGY926384h12",
+        "model": "PD",
+        "status": "Y",
+        "station": {
+          "id": 54,
+          "location": "Centar",
+          "capacity": 1,
+          "address": "Bukureshka"
+        }
+      },
+      "start_time": "15:35",
+      "end_time": "18:30",
+      "date": "2024-11-01"
+    },
+    {
+      "id": 4,
+      "start_time": "15:30",
+      "end_time": "18:24",
+      "date": "2024-12-12",
+      "client": {
+        "name": "Dejan Arsovski",
+        "address": "Bukureshka 3",
+        "email": "dejan@gmail.com",
+        "phone": "048253716",
+        "id": 7
+      },
+      "bicycle": {
+        "id": 5,
+        "serialnumber": "TGY926384hY",
+        "model": "PD",
+        "status": "N",
+        "station": {
+          "id": 52,
+          "location": "Debar Maalo",
+          "capacity": 14,
+          "address": "Partizanska"
+        }
+      }
+    },
+    {
+      "start_time": "19:17",
+      "end_time": "20:17",
+      "date": "2024-12-11",
+      "client": {
+        "name": "Svetlana Atanasovska",
+        "address": "Nikola Tesla 13",
+        "email": "svetlana@gmail.com",
+        "phone": "078243516",
+        "id": 8
+      },
+      "bicycle": {
+        "serialnumber": "TGC938104n18",
+        "model": "SM",
+        "status": "Y",
+        "station": {
+          "id": 57,
+          "location": "Zelenikovo",
+          "capacity": 25,
+          "address": "Nikola Tesla 12"
+        },
+        "id": 9
+      },
+      "id": 5
+    },
+    {
+      "start_time": "12:18",
+      "end_time": "13:18",
+      "date": "2024-12-20",
+      "client": {
+        "name": "Zoran Handziski",
+        "address": "Bul. Goce Delcev 4",
+        "email": "zoran@gmail.com",
+        "phone": "045362718",
+        "id": 5
+      },
+      "bicycle": {
+        "id": 3,
+        "serialnumber": "CTFY0001823",
+        "model": "Black Steel 8",
+        "status": "Y",
+        "station": {
+          "id": 54,
+          "location": "Centar",
+          "capacity": 1,
+          "address": "Bukureshka"
+        }
+      },
+      "id": 6
+    },
+    {
+      "start_time": "09:19",
+      "end_time": "21:30",
+      "date": "2024-12-04",
+      "client": {
+        "name": "Eli Handziska",
+        "address": "Bijlanini Izvori 4",
+        "email": "eli@gmail.com",
+        "phone": "047283715",
+        "id": 10
+      },
+      "bicycle": {
+        "id": 3,
+        "serialnumber": "CTFY0001823",
+        "model": "Black Steel 8",
+        "status": "Y",
+        "station": {
+          "id": 54,
+          "location": "Centar",
+          "capacity": 1,
+          "address": "Bukureshka"
+        }
+      },
+      "id": 7
+    },
+    {
+      "start_time": "21:20",
+      "end_time": "22:00",
+      "date": "2024-12-12",
+      "client": {
+        "name": "Maria Georgieva",
+        "address": "Bukureshka 5/1",
+        "email": "maria@gmail.com",
+        "phone": "076285630",
+        "id": 9
+      },
+      "bicycle": {
+        "id": 6,
+        "serialnumber": "TGY926384h12",
+        "model": "PD",
+        "status": "Y",
+        "station": {
+          "id": 54,
+          "location": "Centar",
+          "capacity": 1,
+          "address": "Bukureshka"
+        }
+      },
+      "id": 8
+    },
+    {
+      "start_time": "22:24",
+      "end_time": "23:30",
+      "date": "2024-12-13",
+      "client": {
+        "name": "Dafinka Spasova",
+        "address": "Bukureshka 5/1",
+        "email": "dafe@gmail.com",
+        "phone": "078243923",
+        "id": 4
+      },
+      "bicycle": {
+        "serialnumber": "C23V90302H",
+        "model": "HP",
+        "status": "Y",
+        "station": {
+          "id": 54,
+          "location": "Centar",
+          "capacity": "15",
+          "address": "Bul. Goce Delcev"
+        },
+        "id": 11
+      },
+      "id": 9
+    },
+    {
+      "start_time": "10:21",
+      "end_time": "23:00",
+      "date": "2024-12-08",
+      "client": {
+        "name": "Ivica Naumovski",
+        "address": "Bul. Goce Delcev 4",
+        "email": "ivica@gmail.com",
+        "phone": "075263819",
+        "id": 11
+      },
+      "bicycle": {
+        "id": 6,
+        "serialnumber": "TGY926384h12",
+        "model": "PD",
+        "status": "Y",
+        "station": {
+          "id": 54,
+          "location": "Centar",
+          "capacity": 1,
+          "address": "Bukureshka"
+        }
+      },
+      "id": 10
+    },
+    {
+      "start_time": "19:22",
+      "end_time": "19:49",
+      "date": "2024-12-04",
+      "client": {
+        "id": 2,
+        "name": "Vale",
+        "address": "Bijlanini Izvori",
+        "email": "vale@yahoo.com",
+        "phone": "073241927"
+      },
+      "bicycle": {
+        "id": 5,
+        "serialnumber": "TGY926384hY",
+        "model": "PD",
+        "status": "N",
+        "station": {
+          "id": 52,
+          "location": "Debar Maalo",
+          "capacity": 14,
+          "address": "Partizanska"
+        }
+      },
+      "id": 11
+    },
+    {
+      "start_time": "10:30",
+      "end_time": "10:54",
+      "date": "2024-12-18",
+      "client": {
+        "id": 3,
+        "name": "Petar",
+        "address": "Bukureshka",
+        "email": "petar@gmail.com",
+        "phone": "073241628"
+      },
+      "bicycle": {
+        "id": 6,
+        "serialnumber": "TGY926384h12",
+        "model": "PD",
+        "status": "Y",
+        "station": {
+          "id": 54,
+          "location": "Centar",
+          "capacity": 1,
+          "address": "Bukureshka"
+        }
+      },
+      "id": 12
+    },
+    {
+      "start_time": "15:00",
+      "end_time": "17:04",
+      "date": "2024-12-13",
+      "client": {
+        "name": "Maria Georgieva",
+        "address": "Bukureshka 5/1",
+        "email": "maria@gmail.com",
+        "phone": "076285630",
+        "id": 9
+      },
+      "bicycle": {
+        "id": 4,
+        "serialnumber": "SAMD0001524",
+        "model": "Black Steel 18",
+        "status": "Y",
+        "station": {
+          "id": 2,
+          "location": "Karpos 2",
+          "capacity": 12,
+          "address": "Dame"
+        }
+      },
+      "id": 13
+    }
+  ]
+}

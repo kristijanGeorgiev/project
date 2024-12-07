@@ -1,0 +1,40 @@
+<div>
+    <h1>Station List</h1>
+  
+   
+    <div class="header-row">
+      <div class="filter-container">
+        <label for="locationFilter">Location:</label>
+        <input [(ngModel)]="locationFilter" (input)="applyFilters()" name="locationFilter" class="input-field" />
+      </div>
+  
+      <button style="background-color: rgb(0, 192, 250); color: white;" class="add-station-button">
+        <a routerLink="/station-add" class="add-station-link">Add New Station</a>
+      </button>
+    </div>
+  
+    <table>
+      <thead>
+        <tr>
+          <th (click)="sortByID()">ID ▲▼</th>
+          <th (click)="sortByLocation()">Location ▲▼</th>
+          <th>Capacity</th>
+          <th>Address</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let station of stations">
+          <td>{{ station.id }}</td>
+          <td>{{ station.location }}</td>
+          <td>{{ station.capacity }}</td>
+          <td>{{ station.address }}</td>
+          <td>
+            <button style="background-color: blue; color: white;" (click)="viewStationDetails(station)">View</button>
+            <button style="background-color: rgb(21, 177, 15); color: white;" (click)="editStation(station)">Edit</button>
+            <button style="background-color: red; color: white;" (click)="deleteStation(station)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>  

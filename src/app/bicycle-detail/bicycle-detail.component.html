@@ -1,0 +1,11 @@
+<div *ngIf="bicycle">
+  <h2>Bicycle Details</h2>
+  <p><strong>ID:</strong> {{ bicycle.id }}</p>
+  <p><strong>SerialNumber:</strong> {{ bicycle.serialnumber }}</p>
+  <p><strong>Model:</strong> {{ bicycle.model }}</p>
+  <p><strong>Available:</strong> {{ bicycle.status }}</p>
+  <p><strong>Station:</strong> {{ bicycle.station.location }}</p>
+  <button (click)="goToBicycleList()" style="margin-top: 20px; background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+    Back to Bicycle List
+  </button>
+</div>

@@ -1,0 +1,35 @@
+<div *ngIf="bicycle">
+    <h2>Edit Bicycle</h2>
+    <form>
+      <label for="serialnumber">SerialNumber:</label>
+      <input [(ngModel)]="bicycle.serialnumber" name="serialnumber" />
+  
+      <label for="model">Model:</label>
+      <input [(ngModel)]="bicycle.model" name="model" />
+  
+      <label for="status">Available:</label>
+      <input [(ngModel)]="bicycle.status" name="status" />
+      
+      <label for="station">Station:</label>
+      <div class="readonly-input">
+          {{ bicycle.station.location }}, {{ bicycle.station.address }}
+      </div>
+      
+      <label for="station">Change Station:</label>
+      <select [(ngModel)]="bicycle.station" name="station" required>
+          <option *ngFor="let station of stations" [ngValue]="station" [selected]="station.id === bicycle.station.id">
+                {{ station.location }}, {{ station.address }}
+          </option>
+      </select>
+      <hr>
+  
+      <div class="button-row">
+        <button style="background-color: rgb(23, 124, 218); color: white;" (click)="saveChanges()">
+          Save Changes
+        </button>
+        <button (click)="goToBicycleList()" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+          Back
+        </button>
+      </div>
+    </form>
+  </div>  

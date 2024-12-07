@@ -1,0 +1,59 @@
+<div>
+    <h1>Rent List</h1>
+
+    <div class="header-row">
+      <div class="filter-container">
+        <label for="start_timeFilter">Date:</label>
+        <input [(ngModel)]="dateFilter" (input)="applyFilters()" name="nameFilter" type="date" class="input-field" />
+  
+        <label for="bicycleFilter">Bicycle:</label>
+        <select id="bicycleFilter" [(ngModel)]="bicyclefilter" (change)="applyFilters()" *ngIf="bicycleloaded" class="select-field">
+          <option value="">All Bicycles</option>
+          <option *ngFor="let bicycle of bicycles" [value]="bicycle.serialnumber">
+            {{ bicycle.serialnumber }}
+          </option>
+        </select>
+  
+        <label for="clientFilter">Client:</label>
+        <select id="clientFilter" [(ngModel)]="clientfilter" (change)="applyFilters()" *ngIf="clientloaded" class="select-field">
+          <option value="">All Clients</option>
+          <option *ngFor="let client of clients" [value]="client.name">
+            {{ client.name }}
+          </option>
+        </select>
+      </div>
+  
+      <button style="background-color: rgb(0, 192, 250); color: white;" class="add-ride-button">
+        <a routerLink="/ride-add" class="add-bicycle-link">Add New Bicycle</a>
+      </button>
+    </div>
+  
+    <table>
+      <thead>
+        <tr>
+          <th (click)="sortByID()">ID ▲▼</th>
+          <th (click)="sortByDate()">Date ▲▼</th> 
+          <th>Start_time</th>
+          <th>End_time</th>
+          <th>Client</th>
+          <th>Bicycle</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ride of rides">
+          <td>{{ ride.id }}</td>
+          <td>{{ ride.date }}</td>
+          <td>{{ ride.start_time }}</td>
+          <td>{{ ride.end_time }}</td>
+          <td>{{ ride.client.name }}</td>
+          <td>{{ ride.bicycle.serialnumber }}</td>
+          <td>
+            <button style="background-color: blue; color: white;" (click)="viewRideDetails(ride)">View</button>
+            <button style="background-color: rgb(21, 177, 15); color: white;" (click)="editRide(ride)">Edit</button>
+            <button style="background-color: red; color: white;" (click)="deleteRide(ride)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>  

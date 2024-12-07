@@ -1,0 +1,37 @@
+<div>
+  <h2>Add New Ride</h2>
+
+  <form (ngSubmit)="addRide()">
+
+    <label for="start_time">Start Time:</label>
+    <input [(ngModel)]="newRide.start_time" name="start_time" type="time" required />
+
+    <label for="end_time">End Time:</label>
+    <input [(ngModel)]="newRide.end_time" name="end_time" type="time" required />
+
+    <label for="date">Date:</label>
+    <input [(ngModel)]="newRide.date" name="date" type="date" required />
+
+    <label for="client">Client:</label>
+    <select [(ngModel)]="newRide.client" name="client" required>
+      <option *ngFor="let client of clients" [ngValue]="client">
+        {{ client.name }} (ID: {{ client.id }})
+      </option>
+    </select>
+
+    <label for="bicycle">Bicycle:</label>
+    <select [(ngModel)]="newRide.bicycle" name="bicycle" required>
+      <option *ngFor="let bicycle of bicycles" [ngValue]="bicycle">
+        {{ bicycle.serialnumber }} - {{ bicycle.model }}
+      </option>
+    </select>
+
+    <hr>
+    <div class="button-row">
+      <button type="submit">Save Ride</button>
+      <button type="button" class="back-button" (click)="goToRideList()">Back</button>
+    </div>
+  </form>
+</div>
+
+  

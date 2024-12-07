@@ -1,0 +1,26 @@
+<div>
+  <h2>Add New Bicycle</h2>
+  <form (submit)="addBicycle()">
+
+    <label for="serialnumber">Serial Number:</label>
+    <input [(ngModel)]="newBicycle.serialnumber" name="serialnumber" required />
+
+    <label for="model">Model:</label>
+    <input [(ngModel)]="newBicycle.model" name="model" required />
+
+    <label for="status">Available:</label>
+    <input [(ngModel)]="newBicycle.status" name="status" required />
+
+    <label for="station">Station:</label>
+    <select [(ngModel)]="newBicycle.station" name="station" required>
+      <option *ngFor="let station of stations" [ngValue]="station">
+        {{ station.location }} (ID: {{ station.id }})
+      </option>
+    </select>
+    <hr>
+    <div style="margin-top: 10px;">
+      <button type="submit">Save Bicycle</button>
+      <button type="button" class="back-button" (click)="goToBicycleList()">Back</button>
+    </div>
+  </form>
+</div>

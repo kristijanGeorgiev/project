@@ -1,0 +1,42 @@
+<div>
+  <h2>Add New Maintenance</h2>
+  <form (submit)="addMaintenance()">
+
+    <label for="description">Description:</label>
+    <input [(ngModel)]="newMaintenance.description" name="description" />
+
+    
+    <div class="form-row">
+      <div class="form-group">
+        <label for="priority">Priority:</label>
+        <input [(ngModel)]="newMaintenance.priority" name="priority" />
+      </div>
+      <div class="form-group">
+        <label for="status">Available:</label>
+        <input [(ngModel)]="newMaintenance.status" name="status" />
+      </div>
+    </div>
+
+    <label for="datescheduled">Date Scheduled:</label>
+    <input [(ngModel)]="newMaintenance.datescheduled" name="datescheduled" type="date" required />
+
+    <label for="notes">Notes:</label>
+    <input [(ngModel)]="newMaintenance.notes" name="notes" />
+
+    <label for="assignedto">Assigned To:</label>
+    <input [(ngModel)]="newMaintenance.assignedTo" name="assignedTo" />
+
+    <label for="bicycle">Bicycle:</label>
+    <select [(ngModel)]="newMaintenance.bicycle" name="bicycle" required>
+      <option *ngFor="let bicycle of bicycles" [ngValue]="bicycle">
+        {{ bicycle.serialnumber }} (ID: {{ bicycle.id }})
+      </option>
+    </select>
+
+    <hr>
+    <div class="button-row">
+      <button type="submit" class="save-button">Save Maintenance</button>
+      <button type="button" class="back-button" (click)="goToMaintenanceList()">Back</button>
+    </div>
+  </form>
+</div>
